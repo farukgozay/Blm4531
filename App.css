@@ -1,0 +1,84 @@
+body{background-color:#121212;color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;margin:0}
+.main-content{padding-top:100px;padding-bottom:40px}
+.container{width:80%;max-width:1200px;margin:0 auto;text-align:center}
+h1{font-size:2.5rem;color:#f0f0f0;margin-bottom:10px}
+.subtitle{font-size:1.2rem;color:#888;margin-top:0;margin-bottom:50px}
+.player-list{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}
+.player-card{background-color:#1e1e1e;border-radius:12px;border:1px solid #333;cursor:pointer;width:250px;overflow:hidden;text-align:left;transition:transform .3s ease,box-shadow .3s ease}
+.player-card:hover{transform:translateY(-10px) scale(1.05);box-shadow:0 15px 30px rgba(0,0,0,.5)}
+.player-image{width:100%;height:180px;object-fit:cover;display:block;border-bottom:1px solid #333}
+.player-info{padding:15px}
+.player-info h2{margin:0 0 5px;font-size:1.2rem;color:#fff}
+.player-info p{margin:0;color:#aaa;font-size:.9rem}
+
+.player-card {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  border: 1px solid #333;
+  cursor: pointer;
+  width: 250px;
+  overflow: hidden;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  top: 0;
+}
+
+.player-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #007bff;
+  box-shadow: 0 15px 30px rgba(0, 123, 255, 0.3);
+}
+
+.player-card:active {
+  transform: translateY(-2px) scale(0.98);
+  box-shadow: 0 5px 10px rgba(0, 123, 255, 0.2);
+}
+
+.add-player-card:hover {
+  background-color: #2a2a2a;
+  border-color: #007bff;
+}
+
+.add-player-content {
+  text-align: center;
+}
+
+.plus-icon {
+  font-size: 3rem;
+  font-weight: lighter;
+  line-height: 1;
+}
+
+/* ✅ KART KÖŞESİ KIRMIZI X */
+.delete-player-btn{
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  border:1px solid rgba(255,77,77,0.7);
+  background:rgba(255,77,77,0.15);
+  color:#ff4d4d;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+  font-weight:900;
+  z-index:50;
+  transition:transform .12s ease, background .2s ease, border-color .2s ease;
+}
+
+.delete-player-btn:hover{
+  background:rgba(255,77,77,0.25);
+  border-color:rgba(255,77,77,0.95);
+  transform:scale(1.06);
+}
+
+.delete-player-btn:active{
+  transform:scale(0.95);
+}

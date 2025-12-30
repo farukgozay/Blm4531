@@ -1,0 +1,88 @@
+.navbar{
+  width:100%;
+  padding:15px 10%;
+  background-color:rgba(26,26,26,.8);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  box-sizing:border-box;
+  border-bottom:1px solid #333
+}
+
+.nav-logo{
+  font-size:1.5rem;
+  font-weight:700;
+  color:#fff;
+  text-decoration:none
+}
+
+.nav-links{
+  display:flex;
+  gap:25px;
+  align-items:center;
+}
+
+.nav-link{
+  color:#ccc;
+  text-decoration:none;
+  font-size:1rem;
+  padding-bottom:5px;
+  border-bottom:2px solid transparent;
+  transition:color .2s ease,border-color .2s ease;
+  background:transparent;
+}
+
+.nav-link:hover{color:#fff}
+.nav-link.active{color:#fff;border-bottom:2px solid #007bff}
+
+/* ✅ ÇIKIŞ BUTONU DÜZGÜN */
+.logout-btn{
+  border:1px solid #555;
+  border-radius:8px;
+  padding:8px 12px;
+  cursor:pointer;
+  color:#fff;
+  background:rgba(255,255,255,0.06);
+  transition:background .2s ease,border-color .2s ease, transform .05s ease;
+  padding-bottom:8px; /* nav-link ile uyumlu olsun */
+}
+
+.logout-btn:hover{
+  background:rgba(255,255,255,0.12);
+  border-color:#777;
+}
+
+.logout-btn:active{
+  transform:scale(0.98);
+}
+
+/* opsiyonel: giriş butonu da aynı tonda */
+.login-btn{
+  border:1px solid #555;
+  border-radius:8px;
+  padding:8px 12px;
+  background:rgba(255,255,255,0.06);
+  padding-bottom:8px;
+}
+
+.login-btn:hover{
+  background:rgba(255,255,255,0.12);
+}
+
+/* Yeni oyuncu ekle linki biraz vurgulu */
+.special-link{
+  border:1px solid rgba(0,123,255,0.5);
+  border-radius:8px;
+  padding:8px 12px;
+  background:rgba(0,123,255,0.12);
+  padding-bottom:8px;
+}
+
+.special-link:hover{
+  background:rgba(0,123,255,0.2);
+}
