@@ -1,3 +1,5 @@
+Video LİNKİ: https://www.youtube.com/watch?v=aNndYdupdE4
+
 ShotForge – Web | Basketbol Şut Analitik Stüdyosu
 
 ShotForge, basketbol oyuncularının şut performanslarını hem istatistiksel hem de görsel olarak analiz etmeyi amaçlayan, web tabanlı bir analitik platformdur. Proje, Clean Architecture (Temiz Mimari) yaklaşımına uygun olarak domain, data ve presentation katmanlarına ayrılmıştır ve bu sayede sürdürülebilir, genişletilebilir ve test edilebilir bir yapı sunmaktadır. Veritabanı katmanında Firebase gibi harici servisler kullanılmadan, SQLite ilişkisel veritabanı tercih edilmiş; veri erişimi ve yönetimi Entity Framework Core aracılığıyla gerçekleştirilmiştir.
